@@ -11,25 +11,57 @@
     tools:context="com.example.engineerakash.workingwithfragment.MainActivity">
 
     <LinearLayout
-        android:id="@+id/textOne"
+        android:id="@+id/allButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:background="#96d4ed"
         android:gravity="center">
-        <TextView
+        <Button
+            android:id="@+id/animalButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            />
+            android:layout_height="match_parent"
+            android:text="Animal"
+            android:textAllCaps="false"
+            android:onClick="nextFragment"/>
+        <Button
+            android:id="@+id/carButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Car"
+            android:textAllCaps="false"
+            android:onClick="nextFragment"/>
+        <Button
+            android:id="@+id/colourButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Colour"
+            android:textAllCaps="false"
+            android:onClick="nextFragment"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/fragmentBase"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="5"
+        android:background="#c4e6f4"
         android:orientation="vertical">
 
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/helpSpeech"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:background="#d7ebf4"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#96d4ed"
+            android:text="click mobile's back button for previous fragment"/>
     </LinearLayout>
 </LinearLayout>

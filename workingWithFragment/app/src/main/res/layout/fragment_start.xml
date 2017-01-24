@@ -10,7 +10,7 @@
         android:id="@+id/myFragmentOne"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Fragment one"
+        android:text="Fragment start"
         android:textSize="35dp"
         android:gravity="center"/>
 
